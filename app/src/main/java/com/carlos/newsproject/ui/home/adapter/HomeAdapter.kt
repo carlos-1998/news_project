@@ -42,7 +42,16 @@ class HomeAdapter(val arrayList: ArrayList<ArticlesItem> = arrayListOf()): Recyc
                 this.arrayList.add(info)
             }
         }
-
         notifyDataSetChanged()
+    }
+
+    override fun onViewAttachedToWindow(holder: Holder) {
+        holder.setIsRecyclable(false)
+        super.onViewAttachedToWindow(holder)
+    }
+
+    override fun onViewDetachedFromWindow(holder: Holder) {
+        holder.setIsRecyclable(false)
+        super.onViewDetachedFromWindow(holder)
     }
 }
