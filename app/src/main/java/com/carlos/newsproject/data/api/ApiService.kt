@@ -8,7 +8,7 @@ import retrofit2.http.Headers
 
 interface ApiService {
     @Headers("Content-Type: application/json")
-    @GET("v2/everything?q=tesla&from=2022-05-21&sortBy=publishedAt&apiKey=${Constants.API_KEY}")
+    @GET("v2/everything?q=tesla&from=2022-05-23&sortBy=publishedAt&apiKey=${Constants.API_KEY}")
     suspend fun getNews():Response<NewsResponse>
 
 }

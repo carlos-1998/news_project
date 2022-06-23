@@ -3,7 +3,7 @@ package com.carlos.newsproject.utils
 class Constants {
 
     companion object {
-        const val API_KEY = "bc48c8a9c8c1498fb73a92fb47d6da15"
+        const val API_KEY = "8ea9089bffa54dfba002df0463bc264a"
         const val BASE_URL = "https://newsapi.org/"
     }
 
