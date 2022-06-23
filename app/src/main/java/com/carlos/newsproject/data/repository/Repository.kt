@@ -7,4 +7,6 @@ class Repository @Inject constructor(
     private val apiHelper: ApiHelper
 ) {
     suspend fun getNews() = apiHelper.getNews()
+
+    suspend fun getCharacters() = apiHelper.getCharacters()
 }

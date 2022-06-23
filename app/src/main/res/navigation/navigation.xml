@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/home2">
+    app:startDestination="@id/rickMortyFragment">
 
     <fragment
         android:id="@+id/home2"
         android:name="com.carlos.newsproject.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/rickMortyFragment"
+        android:name="com.carlos.newsproject.ui.ryckmorty.RickMortyFragment"
+        android:label="RickMortyFragment"
+        tools:layout="@layout/fragment_rick_morty"/>
 </navigation>
